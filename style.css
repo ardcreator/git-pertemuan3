@@ -1,0 +1,511 @@
+/** @format */
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Navbar */
+/* By Ashari Rasyid */
+
+.containernav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #fffffe;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0px 80px 0 100px;
+  font-size: 15px;
+  width: 100%;
+  height: 70px;
+  background-color: #094067;
+  box-shadow: 0px 0px 25px 0 rgba(00, 00, 00, 0.3);
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  padding: 15px;
+}
+
+.firstname {
+  color: white;
+  font-weight: 700;
+}
+
+.lastname {
+  color: #3da9fc;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-padding {
+  padding-right: 150px;
+}
+
+.navbar > li {
+  list-style-type: none;
+  padding: 25px;
+  font-weight: 400;
+}
+
+.navbar > li > a {
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navbar > li > a:hover {
+  color: #ef4565;
+  transition: all 0.3s ease-in-out;
+}
+
+.search {
+  padding: 8px 15px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
+  color: white;
+}
+
+.button {
+  position: relative;
+  padding: 8px 15px;
+  left: -8px;
+  border: 2px solid #3da9fc;
+  background-color: #3da9fc;
+  color: #fafafa;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: #fafafa;
+  transition: all 0.3s ease-in-out;
+  color: #207cca;
+}
+
+.profile {
+  position: relative;
+  color: white;
+  border-radius: 40%;
+  font-size: 1.3rem;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-p {
+  padding-left: 50px;
+}
+
+.cart {
+  position: relative;
+  top: 3px;
+  right: -3px;
+  color: white;
+  border-radius: 30%;
+  font-size: 1.3rem;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+}
+
+.navbar li .profile:hover {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar li .cart:hover {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* RESPONSIVE NAVBAR */
+@media only screen and (max-width :769px) {
+  .navbar {
+    position: fixed;
+    top: 12%;
+    left: -35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    height: 100%;
+    width: 0%;
+    max-width: 35rem;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+
+/* Section Hero */
+/* By Ashari Rasyid */
+
+.h-container {
+  background-color: #094067;
+  padding-top: 100px;
+}
+
+.hero {
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 0 0 115px;
+}
+
+/* .hero::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(155, 155, 155, 0));
+} */
+
+.text-hero {
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+
+.hero p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: white;
+  padding-right: 900px;
+}
+
+.hero button {
+  background-color: #3da9fc;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.shop:hover {
+  color: white;
+  transition: ease-i 0.3s ease-in-out;
+  background-color: #094067;
+}
+
+/* Section Category */
+/* By Ashari Rasyid */
+
+.section-category {
+  padding: 10rem 0 5rem 0;
+  overflow: hidden;
+}
+
+.cat-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 114rem;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.section-category h1 {
+  max-width: 100%;
+  height: 5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  position: flex;
+  text-align: center;
+}
+
+.cat-center .cat {
+  max-width: 37rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cat-center .cat:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.cat-center .cat img {
+  width: 25.5rem;
+  height: 10,4rem;
+  margin: auto;
+  object-fit: cover;
+  transition: all 2s ease;
+}
+
+.cat-center .cat:hover img {
+  transform: scale(1.1);
+}
+
+.cat-center .cat div {
+  position: absolute;
+  bottom: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 13rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 80%;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE CATEGORY */
+@media only screen and (max-width: 1200px) {
+  .cat-center .cat img {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  .cat-center .cat {
+    max-width: 25rem;
+    height: 20rem;
+  }
+
+  .cat-center .cat img {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .cat-center {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .cat-center .cat {
+    max-width: 100%;
+    height: 30rem;
+  }
+
+  .cat-center .cat:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+  }
+
+  .cat-center .cat img {
+    width: 100%;
+  }
+}
+
+/* Section Product */
+/* By Ashari Rasyid */
+
+.title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.product-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.product-item {
+  position: relative;
+  width: 27rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 31rem;
+  object-fit: cover;
+  transition: all 500ms linear;
+}
+
+.product-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-info span {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.product-info a {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  transition: all 300ms ease;
+}
+
+.product-info a:hover {
+  color: var(--green);
+}
+
+.product-item .icons {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.product-item .icons li {
+  background-color: var(--white);
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+  transition: 300ms ease-out;
+  transform: translateY(20px);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.product-item .icons li:first-child {
+  transition-delay: 0.1s;
+}
+
+.product-item .icons li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.product-item .icons li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.product-item:hover .icons li {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-item .icons li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.product-item .icons li:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.product-item .overlay {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-item .overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 300ms ease-out;
+}
+
+.product-item:hover .overlay::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.product-item:hover .product-thumb img {
+  transform: scale(1.1);
+}
+
+.product-item .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--green);
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 567px) {
+  .product-center {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .product-item {
+    width: 40%;
+    margin-bottom: 3rem;
+  }
+
+  .product-thumb img {
+    height: 20rem;
+  }
+
+  .product-item {
+    margin-right: 2rem;
+  }
+
+  .product-item .icons li {
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+
